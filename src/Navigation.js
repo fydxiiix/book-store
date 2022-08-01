@@ -1,16 +1,16 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import AdminPage from "./pages/AdminPage";
 import MainPage from "./pages/MainPage";
 import AdminAddPage from "./pages/AdminAddPage";
 import AdminEditPage from "./pages/AdminEditPage";
 import BasketPage from "./pages/BasketPage";
-import Navbar from "./components/Navbar";
+import Navbar from './components/Navbar';
 
 function Navigation() {
   return (
     <BrowserRouter>
-      <Navbar />
+    <Navbar />
       <Routes>
         <Route path="admin" element={<AdminPage />} />
         <Route path="/" element={<MainPage />} />
