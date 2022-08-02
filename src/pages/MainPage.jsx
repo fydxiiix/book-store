@@ -6,6 +6,7 @@ import {Container, Card,
     Button,
     Typography} from "@mui/material"
 import { ClientContext } from "../context/Provider"
+import {Link} from "react-router-dom"
 
 function MainPage() {
     const {
@@ -27,10 +28,13 @@ function MainPage() {
          <CardMedia
            component="img"
            height="140"
+           image = {item.volumeInfo.imageLinks.thumbnail}
          />
          <CardContent>
-           <Typography gutterBottom variant="h5" component="div">
-             Lizard
+           <Typography 
+           className="product-card-title"
+           gutterBottom variant="h5" component="div">
+             {item.volumeInfo.title}
            </Typography>
            <Typography variant="body2" color="text.secondary">
              Lizards are a widespread group of squamate reptiles, with over 6,000
