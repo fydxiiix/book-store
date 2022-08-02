@@ -1,19 +1,689 @@
 {
-  "posts": [
+  "books": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "kind": "books#volume",
+      "id": "OMOwmLgbMfYC",
+      "etag": "zG5eEwuirg4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/OMOwmLgbMfYC",
+      "volumeInfo": {
+        "title": "Out's Gay & Lesbian Guide to the Web",
+        "authors": ["J. Harrison Fitch"],
+        "publisher": "Ziff Davis Press",
+        "publishedDate": "1997",
+        "description": "Describes sites on the World Wide Web of special interest to gay men and lesbians",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0789710595"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780789710598"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 284,
+        "printType": "BOOK",
+        "categories": ["Social Science"],
+        "maturityRating": "MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.4.3.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=OMOwmLgbMfYC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=OMOwmLgbMfYC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.kg/books?id=OMOwmLgbMfYC&q=search+term&dq=search+term&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.kg/books?id=OMOwmLgbMfYC&dq=search+term&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Out_s_Gay_Lesbian_Guide_to_the_Web.html?hl=&id=OMOwmLgbMfYC"
+      },
+      "saleInfo": {
+        "country": "KG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=OMOwmLgbMfYC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "<b>Search</b> Options features. Iust keep these simple guidelines in mind: 0 AND <b>searches</b> are possible by selecting the match all <b>terms</b> (AND) option and then entering whatever <b>words</b> you want in the <b>search</b> box. In the above example,&nbsp;..."
+      }
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "kind": "books#volume",
+      "id": "77RZAAAAYAAJ",
+      "etag": "QORZfvZvtrc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/77RZAAAAYAAJ",
+      "volumeInfo": {
+        "title": "Pennsylvania Law Encyclopedia",
+        "publishedDate": "2004",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "PSU:000062618915"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "printType": "BOOK",
+        "categories": ["Law"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.3.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=77RZAAAAYAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=77RZAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.kg/books?id=77RZAAAAYAAJ&q=search+term&dq=search+term&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.kg/books?id=77RZAAAAYAAJ&dq=search+term&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Pennsylvania_Law_Encyclopedia.html?hl=&id=77RZAAAAYAAJ"
+      },
+      "saleInfo": {
+        "country": "KG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=77RZAAAAYAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "A. Boolean Searches A Boolean search is a <b>search phrase</b> which uses words and connectors. Connectors establish a logical relationship between the words in your <b>search term</b>. As the service will look through all documents within the source&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "T7nuAAAAMAAJ",
+      "etag": "3wNPxT/GCxY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/T7nuAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Hands-on Information Literacy Activities",
+        "authors": ["Jane Birks", "Fiona Hunt"],
+        "publisher": "Neal Schuman Pub",
+        "publishedDate": "2003",
+        "description": "Provides activities designed to help students gain information retrieval skills.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015056686622"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 135,
+        "printType": "BOOK",
+        "categories": ["Computers"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.2.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=T7nuAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=T7nuAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.kg/books?id=T7nuAAAAMAAJ&q=search+term&dq=search+term&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.kg/books?id=T7nuAAAAMAAJ&dq=search+term&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Hands_on_Information_Literacy_Activities.html?hl=&id=T7nuAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "KG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=T7nuAAAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "(The number should be recorded on the board beside the <b>search term</b>.) c) I am searching for pink AND round. (Write the new search string under the previous one.) d) How many shapes match my search criteria? e) All students with a round&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "g7YNeVDDbVgC",
+      "etag": "mHyfRoC9ONA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/g7YNeVDDbVgC",
+      "volumeInfo": {
+        "title": "Flexible Query Answering Systems",
+        "subtitle": "7th International Conference, FQAS 2006, Milan, Italy, June 7-10, 2006",
+        "authors": [
+          "Henrik Legind Larsen",
+          "Gabriella Pasi",
+          "Daniel Ortiz-Arroyo",
+          "Troels Andreasen",
+          "Henning Christiansen"
+        ],
+        "publisher": "Springer Science & Business Media",
+        "publishedDate": "2006-05-30",
+        "description": "This book constitutes the refereed proceeding of the 7th International Conference on Flexible Query Answering Systems, FQAS 2006, held in Milan, Italy in June 2006. The 60 revised full papers presented were carefully reviewed and selected from numerous submissions. The papers are organized in topical sections on flexibility in database management and quering, vagueness and uncertainty in XML quering and retrieval, information retrieval and filtering, multimedia information access, user modeling and personalization, knowledge and data extraction, intelligent information extraction from text, and knowledge representation and reasoning.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9783540346388"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "3540346384"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 714,
+        "printType": "BOOK",
+        "categories": ["Computers"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=g7YNeVDDbVgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=g7YNeVDDbVgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.kg/books?id=g7YNeVDDbVgC&pg=PA283&dq=search+term&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.kg/books?id=g7YNeVDDbVgC&dq=search+term&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Flexible_Query_Answering_Systems.html?hl=&id=g7YNeVDDbVgC"
+      },
+      "saleInfo": {
+        "country": "KG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=g7YNeVDDbVgC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Present methods of refinement of the result of a <b>query</b> or <b>search</b> are inadequate – there is far too much material which is potentially relevant. Additionally, users, don&#39;t really know what is relevant until some way through the discovery&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ZAH1AwAAQBAJ",
+      "etag": "M/PhQXsExqo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ZAH1AwAAQBAJ",
+      "volumeInfo": {
+        "title": "Power Query for Power BI and Excel",
+        "authors": ["Christopher Webb", "Crossjoin Consulting Limited"],
+        "publisher": "Apress",
+        "publishedDate": "2014-07-05",
+        "description": "Power Query for Power BI and Excel is a book for people who are tired of copying and pasting data into Excel worksheets. Power Query, part of the Microsoft Power BI suite, is a tool that automates the process of getting data into Excel and will save you hours of dull, repetitive, and error-prone work! Power Query makes it easy to extract data from many different data sources, filter that data, aggregate it, clean it and perform calculations on it, finally loading that data into either your worksheet or directly into the new Excel 2013 Data Model used by Power Pivot. This concise, practical book provides a complete guide to Power Query and how to use it to solve all of your Excel data-loading problems. Power Query for Power BI and Excel goes well beyond the surface of what Power Query can do. The book goes deep into the underlying M language, showing you how to do amazing things that aren’t going to be possible from just the GUI interface that is covered in most other books. You’ll have full command of the GUI, and you’ll be able to drop into the M language to go beyond what the GUI provides. The depth in this book makes it a must-have item for anyone who is pushing Power BI and Excel to their limits in the pursuit of business intelligence from data analysis. Teaches the basics of using Power Query to load data into Excel Helps you solve common, data-related problems with Power Query Shows how to write your own solutions in the powerful M language",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781430266921"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1430266929"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 272,
+        "printType": "BOOK",
+        "categories": ["Computers"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.6.5.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ZAH1AwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ZAH1AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.kg/books?id=ZAH1AwAAQBAJ&pg=PA42&dq=search+term&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.kg/books?id=ZAH1AwAAQBAJ&dq=search+term&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Power_Query_for_Power_BI_and_Excel.html?hl=&id=ZAH1AwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.kg/books/download/Power_Query_for_Power_BI_and_Excel-sample-epub.acsm?id=ZAH1AwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.kg/books/download/Power_Query_for_Power_BI_and_Excel-sample-pdf.acsm?id=ZAH1AwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ZAH1AwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "When you perform a search using the Online Search button, a new tab will appear on the Excel ribbon: the Search tab ... Clicking one of these buttons will add an advanced filter to your <b>search term</b> in the format filtername:(<b>searchterm</b>)."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "RbrgAAAAMAAJ",
+      "etag": "pdOnMz+bEW0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/RbrgAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Managing Information",
+        "publishedDate": "1996",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015082960785"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "printType": "BOOK",
+        "categories": ["Information resources management"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=RbrgAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=RbrgAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.kg/books?id=RbrgAAAAMAAJ&q=search+term&dq=search+term&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.kg/books?id=RbrgAAAAMAAJ&dq=search+term&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Managing_Information.html?hl=&id=RbrgAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "KG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=RbrgAAAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Within 10 <b>WORDS</b> of . . . Followed anywhere by . . . IN the paragraph LABELLED . . . CD ROM NETWORKING Detailed Usage Statistics Central Control of Client. The menu - assisted <b>query</b> screen allows for <b>searching</b> against boolean expressions&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "wg1U753HIoUC",
+      "etag": "UThrTb0NkiM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/wg1U753HIoUC",
+      "volumeInfo": {
+        "title": "Special Edition Using StarOffice 6.0",
+        "authors": ["Michael Koch"],
+        "publisher": "Que Pub",
+        "publishedDate": "2003",
+        "description": "StarOffice is a full-featured, fully integrated suite of office productivity tools with a strong international following. This volume, which comes with a word processor (StarOffice Writer), spreadsheet application, and drawing and presentation program, addresses the formula editor and a third-party database module that is installed with the software.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0789728338"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780789728333"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 1152,
+        "printType": "BOOK",
+        "categories": ["Computers"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=wg1U753HIoUC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=wg1U753HIoUC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.kg/books?id=wg1U753HIoUC&q=search+term&dq=search+term&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.kg/books?id=wg1U753HIoUC&dq=search+term&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Special_Edition_Using_StarOffice_6_0.html?hl=&id=wg1U753HIoUC"
+      },
+      "saleInfo": {
+        "country": "KG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=wg1U753HIoUC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "To quickly find a help topic when you know exactly what you&#39;re looking for, use the Index tab, which displays an ... Select a term from the scrolling list or enter the name of the keyword in the <b>Search Term</b> box and press Enter to have&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "AnYWAQAAMAAJ",
+      "etag": "WZxAOtE3tJw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/AnYWAQAAMAAJ",
+      "volumeInfo": {
+        "title": "Research on Relevance Weighting 1976-1979",
+        "authors": ["Karen Sparck Jones", "C. A. Webster"],
+        "publishedDate": "1980",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "PSU:000008081285"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 61,
+        "printType": "BOOK",
+        "categories": ["Automatic indexing"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=AnYWAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=AnYWAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.kg/books?id=AnYWAQAAMAAJ&q=search+term&dq=search+term&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.kg/books?id=AnYWAQAAMAAJ&dq=search+term&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Research_on_Relevance_Weighting_1976_197.html?hl=&id=AnYWAQAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "KG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=AnYWAQAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "SPARCK JONES, K. , Automatic Keyword Classification for Information Retrieval , Butterworths , London (1971). ... SPARCK JONES, K. , &#39;<b>Search term</b> relevance weighting - some recent results&#39;, Journal of Information Science, (1980)."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "H4JyEAAAQBAJ",
+      "etag": "o8TNL0B+j9s",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/H4JyEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Keyword Search in Databases",
+        "authors": ["Jeffrey Xu Yu", "Lijun Chang", "Lu Qin"],
+        "publisher": "Springer Nature",
+        "publishedDate": "2022-06-01",
+        "description": "It has become highly desirable to provide users with flexible ways to query/search information over databases as simple as keyword search like Google search. This book surveys the recent developments on keyword search over databases, and focuses on finding structural information among objects in a database using a set of keywords. Such structural information to be returned can be either trees or subgraphs representing how the objects, that contain the required keywords, are interconnected in a relational database or in an XML database. The structural keyword search is completely different from finding documents that contain all the user-given keywords. The former focuses on the interconnected object structures, whereas the latter focuses on the object content. The book is organized as follows. In Chapter 1, we highlight the main research issues on the structural keyword search in different contexts. In Chapter 2, we focus on supporting structural keyword search in a relational database management system using the SQL query language. We concentrate on how to generate a set of SQL queries that can find all the structural information among records in a relational database completely, and how to evaluate the generated set of SQL queries efficiently. In Chapter 3, we discuss graph algorithms for structural keyword search by treating an entire relational database as a large data graph. In Chapter 4, we discuss structural keyword search in a large tree-structured XML database. In Chapter 5, we highlight several interesting research issues regarding keyword search on databases. The book can be used as either an extended survey for people who are interested in the structural keyword search or a reference book for a postgraduate course on the related topics. Table of Contents: Introduction / Schema-Based Keyword Search on Relational Databases / Graph-Based Keyword Search / Keyword Search in XML Databases / Other Topics for Keyword Search on Databases",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9783031794261"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "3031794265"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 143,
+        "printType": "BOOK",
+        "categories": ["Technology & Engineering"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=H4JyEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=H4JyEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.kg/books?id=H4JyEAAAQBAJ&pg=PA128&dq=search+term&hl=&cd=9&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=H4JyEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=H4JyEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KG",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 28.09,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 25.28,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=H4JyEAAAQBAJ&rdid=book-H4JyEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 28090000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 25280000,
+              "currencyCode": "USD"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "KG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.kg/books/download/Keyword_Search_in_Databases-sample-pdf.acsm?id=H4JyEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=H4JyEAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "<b>Query</b>-dependence:The relevance-based score only considers the importance of a <b>term</b> itself, without considering which result the <b>term</b> comes from. In some situations, the more important result G(t) is, the higher would be the weights of&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "DgbhAAAAMAAJ",
+      "etag": "vHtwcl7ohWE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/DgbhAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Search INFORM.",
+        "publishedDate": "1986",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015014503646"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "printType": "BOOK",
+        "categories": ["ABI/INFORM (Information retrieval system)"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.3.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=DgbhAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=DgbhAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.kg/books?id=DgbhAAAAMAAJ&pg=PA2&dq=search+term&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.kg/books?id=DgbhAAAAMAAJ&dq=search+term&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Search_INFORM.html?hl=&id=DgbhAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "KG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=DgbhAAAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

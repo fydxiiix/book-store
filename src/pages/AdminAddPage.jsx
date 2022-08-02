@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const AdminAddPage = () => {
-  return (
-    <div>AdminAddPage</div>
-  )
-}
+  return <div>AdminAddPage</div>;
+};
 
-export default AdminAddPage
+export default AdminAddPage;

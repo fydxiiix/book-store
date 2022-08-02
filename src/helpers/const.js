@@ -1,1 +1,1 @@
-export const booksApi = "http://localhost:8000"
+export const booksApi = "http://localhost:8000/books"
