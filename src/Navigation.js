@@ -6,9 +6,11 @@ import AdminAddPage from "./pages/AdminAddPage";
 import AdminEditPage from "./pages/AdminEditPage";
 import BasketPage from "./pages/BasketPage";
 import Navbar from './components/Navbar';
+import Provider from "./context/Provider"
 
 function Navigation() {
   return (
+    <Provider>
     <BrowserRouter>
     <Navbar />
       <Routes>
@@ -19,6 +21,7 @@ function Navigation() {
         <Route path="/basket" element={<BasketPage />} />
       </Routes>
     </BrowserRouter>
+    </Provider>
   );
 }
 
