@@ -14,6 +14,7 @@ function MainPage() {
     <div className='main-page'>
 <Container>
 <h2>Books</h2>
+<div className='products'></div>
 </Container>
 
     </div>
