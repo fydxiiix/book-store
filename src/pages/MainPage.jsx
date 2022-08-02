@@ -14,7 +14,13 @@ function MainPage() {
     <div className='main-page'>
 <Container>
 <h2>Books</h2>
-<div className='products'></div>
+<div className='products'>
+    {books.map((item) => (
+        <Card key={item.id} className="product-card">
+            
+        </Card>
+    ))}
+</div>
 </Container>
 
     </div>
