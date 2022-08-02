@@ -1,9 +1,22 @@
 import React from 'react'
-import {container} from "@mui/material"
+import {Container} from "@mui/material"
+import { ClientContext } from "../context/Provider"
 
 function MainPage() {
+    const {
+        getBooks
+    } = React.useContext(ClientContext); 
+
+    React.useEffect(() => {
+        getBooks()
+    }, []);
   return (
-    <div>MainPage</div>
+    <div className='main-page'>
+<Container>
+<h2>Books</h2>
+</Container>
+
+    </div>
   )
 }
 
