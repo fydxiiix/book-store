@@ -18,7 +18,7 @@ function Provider ({children}) {
         books: [],
     });
     const getBooks = () => {
-        fetch()
+        fetch(booksApi)
         .then ((res) => {
             return res.json()
         })
@@ -33,6 +33,7 @@ function Provider ({children}) {
     }
     const data = {
         getBooks,
+        books: state.books,
     }
     return (
         <ClientContext.Provider value={data}>{children}</ClientContext.Provider>

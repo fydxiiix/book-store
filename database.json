@@ -1,7 +1,5 @@
 {
-  "kind": "books#volumes",
-  "totalItems": 764,
-  "items": [
+  "books": [
     {
       "kind": "books#volume",
       "id": "OMOwmLgbMfYC",
