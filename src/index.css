@@ -1,32 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
-.main-page{
-    padding: 30px 0;
+.main-page {
+  padding: 30px 0;
 }
 
-.main-page h2 {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 40px;
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: rgb(0, 0, 0);
 }
 
 .products {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
 }
 
 .product-card {
-    width: 30%;
-    margin-bottom: 30px;
+  width: 30%;
+  margin-bottom: 30px;
 }
 
 .product-card img {
-    object-fit: contain;
+  object-fit: contain;
+}
+
+.navbar-link {
+  padding: 0 5px;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+  font-weight: 700;
+}
+#booknetic {
+  font-size: 40px;
+  margin-left: 20px;
 }

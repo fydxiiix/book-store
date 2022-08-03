@@ -9,9 +9,10 @@ import InputBase from "@mui/material/InputBase";
 import Badge from "@mui/material/Badge";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
+import MenuBookIcon from "@mui/icons-material/MenuBook";
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircle from "@mui/icons-material/AccountCircle";
+import NoteAddIcon from "@mui/icons-material/NoteAdd";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import MailIcon from "@mui/icons-material/Mail";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
@@ -61,7 +62,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function Navbar() {
-    const {searchWord, setSearchWord, getBooks, basketCount} = React.useContext(ClientContext);
+  const { searchWord, setSearchWord, getBooks, basketCount } =
+    React.useContext(ClientContext);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -85,9 +87,9 @@ export default function Navbar() {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
-React.useEffect (() => {
-    getBooks() ;
-}, [searchWord])
+  React.useEffect(() => {
+    getBooks();
+  }, [searchWord]);
 
   const menuId = "primary-search-account-menu";
   const renderMenu = (
@@ -165,58 +167,79 @@ React.useEffect (() => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: "none", sm: "block" } }}
-          ></Typography>
-          <Link className="navbar-link" to="/">
-            BOOKNETIC
-          </Link>
-          <Link className="navbar-link" to="/admin">
-            ADMIN
-          </Link>
-          <Link className="navbar-link" to="/admin/add">
-            ADD
-          </Link>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-            value = {searchWord}
-            onChange={(e) => {
-                setSearchWord(e.target.value)
-            }}
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
-          <Box sx={{ flexGrow: 1 }} />
-
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
-           <Link to="/basket">
+      <AppBar
+        position="static"
+        sx={{
+          background:
+            "linear-gradient(60deg, rgba(240,197,69,1) 0%, rgba(223,133,88,1) 43%, rgba(125,75,28,1) 100%)",
+        }}
+      >
+        <Toolbar
+          style={{ justifyContent: "space-between", alignItems: "center" }}
+        >
+          <Box style={{ display: "inline-flex", alignItems: "center" }}>
             <IconButton
               size="large"
-              aria-label="show my favorites"
+              edge="start"
               color="inherit"
+              aria-label="open drawer"
+              // sx={{ mr: 1 }}
             >
-              <Badge badgeContent={4} color="error">
-                <FavoriteIcon />
-              </Badge>
+              <MenuBookIcon />
             </IconButton>
+            <Search className="navbar-search">
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                value={searchWord}
+                onChange={(e) => {
+                  setSearchWord(e.target.value);
+                }}
+                placeholder="Search…"
+                inputProps={{ "aria-label": "search" }}
+                style={{ width: "150px" }}
+              />
+            </Search>
+
+            <Typography
+              variant="h5"
+              noWrap
+              component="div"
+              sx={{ display: { xs: "none", sm: "block" } }}
+            ></Typography>
+          </Box>
+          <Link className="navbar-link main" id="booknetic" to="/">
+            BOOKNETIC
+          </Link>
+          {/* <Box sx={{ flexGrow: 1 }} /> */}
+
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+            <Link
+              className="navbar-link"
+              to="/admin"
+              style={{ display: "inline-flex", alignItems: "center" }}
+            >
+              ADMIN
+            </Link>
+            <Link
+              className="navbar-link"
+              to="/admin/add"
+              style={{ display: "inline-flex", alignItems: "center" }}
+            >
+              ADD
+            </Link>
+
+            <Link to="/basket">
+              <IconButton
+                size="large"
+                aria-label="show my favorites"
+                color="inherit"
+              >
+                <Badge badgeContent={4} color="error">
+                  <FavoriteIcon />
+                </Badge>
+              </IconButton>
             </Link>
             <IconButton
               size="large"
