@@ -18,6 +18,7 @@ import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 // import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from "@mui/icons-material/MoreVert";
 import { Link } from "react-router-dom";
+import { ClientContext } from "../context/Provider";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -60,6 +61,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function Navbar() {
+    const {searchWord, setSearchWord, getBooks, basketCount} = React.useContext(ClientContext);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -82,6 +84,10 @@ export default function Navbar() {
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
+
+React.useEffect (() => {
+    getBooks() ;
+}, [searchWord])
 
   const menuId = "primary-search-account-menu";
   const renderMenu = (
@@ -190,6 +196,10 @@ export default function Navbar() {
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
+            value = {searchWord}
+            onChange={(e) => {
+                setSearchWord(e.target.value)
+            }}
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
             />
@@ -197,6 +207,7 @@ export default function Navbar() {
           <Box sx={{ flexGrow: 1 }} />
 
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
+           <Link to="/basket">
             <IconButton
               size="large"
               aria-label="show my favorites"
@@ -206,12 +217,13 @@ export default function Navbar() {
                 <FavoriteIcon />
               </Badge>
             </IconButton>
+            </Link>
             <IconButton
               size="large"
               aria-label="show my shopping list"
               color="inherit"
             >
-              <Badge badgeContent={17} color="error">
+              <Badge badgeContent={basketCount} color="error">
                 <ShoppingBasketIcon />
               </Badge>
             </IconButton>

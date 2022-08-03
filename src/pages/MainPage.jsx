@@ -10,7 +10,8 @@ import {Link} from "react-router-dom"
 
 function MainPage() {
     const {
-        getBooks, books
+        getBooks, books,
+        addBookToBasket
     } = React.useContext(ClientContext); 
     
 
@@ -20,7 +21,7 @@ function MainPage() {
   return (
     <div className='main-page'>
 <Container>
-<h2>Books</h2>
+<h2>Catalogue</h2>
 <div className='products'>
     {books.map((item) => (
          <Card key={item.id} className="product-card">
@@ -37,13 +38,16 @@ function MainPage() {
              {item.volumeInfo.title}
            </Typography>
            <Typography variant="body2" color="text.secondary">
-             Lizards are a widespread group of squamate reptiles, with over 6,000
-             species, ranging across all continents except Antarctica
+            Price: 50$
            </Typography>
          </CardContent>
          <CardActions>
-           <Button size="small">Share</Button>
-           <Button size="small">Learn More</Button>
+           <Button onClick={() => addBookToBasket(item)}
+           variant="outlined"
+           size="small">ADD TO CART</Button>
+           <Button 
+           variant="outlined"
+           size="small">ADD TO FAVORITES</Button>
          </CardActions>
        </Card>
     ))}
