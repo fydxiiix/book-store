@@ -230,7 +230,7 @@ export default function Navbar() {
               ADD
             </Link>
 
-            <Link to="/basket">
+            <Link to="/favotite">
               <IconButton
                 size="large"
                 aria-label="show my favorites"
@@ -241,6 +241,7 @@ export default function Navbar() {
                 </Badge>
               </IconButton>
             </Link>
+            <Link to="/basket">
             <IconButton
               size="large"
               aria-label="show my shopping list"
@@ -250,6 +251,7 @@ export default function Navbar() {
                 <ShoppingBasketIcon />
               </Badge>
             </IconButton>
+            </Link>
             <IconButton
               size="large"
               edge="end"
