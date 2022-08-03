@@ -15,6 +15,7 @@ function AdminAddPage() {
 
   const [title, setTitle] = React.useState("");
   const [authors, setAuthors] = React.useState("");
+  const [description, setDescription] = React.useState("");
   const [price, setPrice] = React.useState("");
   const [publishedDate, setPublishedDate] = React.useState("");
   const [categories, setCategories] = React.useState("");
@@ -24,6 +25,7 @@ function AdminAddPage() {
     const newBook = {
       title: title.trim(),
       authors: authors.trim(),
+      description: description.trim(),
       price,
       publishedDate: publishedDate.trim(),
       categories: categories.trim(),
@@ -38,6 +40,7 @@ function AdminAddPage() {
     sendNewBook(newBook);
     setTitle("");
     setAuthors("");
+    setDescription("");
     setPrice("");
     setPublishedDate("");
     setCategories("");
@@ -50,6 +53,7 @@ function AdminAddPage() {
         <h2>Add new book</h2>
         <form
           onSubmit={(e) => {
+            // console.log("hello");
             e.preventDefault();
             handleSubmit();
           }}
@@ -64,6 +68,12 @@ function AdminAddPage() {
             value={authors}
             onChange={(e) => setAuthors(e.target.value)}
             label="Authors name"
+            variant="outlined"
+          />
+          <TextField
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            label="Description"
             variant="outlined"
           />
           <TextField
@@ -97,6 +107,11 @@ function AdminAddPage() {
                 Psychology and medicine
               </MenuItem>
               <MenuItem value="Management">Management</MenuItem>
+              <MenuItem value="Literature">Literature</MenuItem>
+              <MenuItem value="Horror">Horror</MenuItem>
+              <MenuItem value="Detective">Detective</MenuItem>
+              <MenuItem value="Science">Science</MenuItem>
+              <MenuItem value="For kids">For kids</MenuItem>
             </Select>
           </FormControl>
           <TextField

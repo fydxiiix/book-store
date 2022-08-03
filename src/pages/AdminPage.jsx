@@ -26,7 +26,8 @@ function AdminPage() {
             <TableRow>
               <TableCell>#</TableCell>
               <TableCell>Title</TableCell>
-              <TableCell>Author</TableCell>
+              <TableCell>Authors</TableCell>
+              <TableCell>Description</TableCell>
               <TableCell>Price</TableCell>
               <TableCell>Date of publication</TableCell>
               <TableCell>Categories</TableCell>
@@ -41,7 +42,8 @@ function AdminPage() {
                 <TableCell>{index + 1}</TableCell>
                 <TableCell>{item.volumeInfo.title}</TableCell>
                 <TableCell>{item.volumeInfo.authors}</TableCell>
-                <TableCell>{item.price}сом</TableCell>
+                <TableCell>{item.volumeInfo.description}</TableCell>
+                <TableCell>{item.price}$</TableCell>
                 <TableCell>{item.volumeInfo.publishedDate}</TableCell>
                 <TableCell>{item.volumeInfo.categories}</TableCell>
                 <TableCell>

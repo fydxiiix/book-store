@@ -18,6 +18,16 @@ function AdminProvider({ children }) {
     books: [],
   });
 
+  const sendNewBook = (newBook) => {
+    fetch(booksApi, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newBook),
+    });
+  };
+
   const getBooks = () => {
     fetch(booksApi)
       .then((res) => res.json())
@@ -40,6 +50,7 @@ function AdminProvider({ children }) {
     books: state.books,
     getBooks,
     deleteBook,
+    sendNewBook,
   };
   return <AdminContext.Provider value={data}>{children}</AdminContext.Provider>;
 }
