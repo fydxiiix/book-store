@@ -1,6 +1,7 @@
 {
   "books": [
     {
+<<<<<<< HEAD
       "title": "Кирсти Эплбаум: Середнячок",
       "authors": "Эплбаум Кирстиy",
       "description": "Одиннадцатилетняя Мэгги живет в Феннис Вике, защищенном боярышниковой изгородью от внешнего мира, где бушует Тихая война и шныряют грязные опасные бродяги... Ее брат Джед - старший. Старшие - особенные. Как только достигают четырнадцати, они отправляются исполнять свое великое предназначение - героически сражаться, чтобы дома их родные были в безопасности. Старших любят и уважают. Очаровательный Триг - младший. А Мэгги - Середнячок. Хуже не придумаешь, невидимка, от которой ничего не ждут. Но все меняется, когда она встречает бродягу Уну, которая выглядит совсем не опасной. И похоже, ей нужна помощь... Для среднего школьного возраста. Подробнее: https://www.labirint.ru/books/844797/",
@@ -9,10 +10,20 @@
       "categories": "For kids",
       "thumbnail": "-",
       "id": "FdAB9Wy"
+=======
+      "title": "fhjf",
+      "authors": "",
+      "description": "",
+      "price": "",
+      "publishedDate": "",
+      "categories": "",
+      "thumbnail": "",
+      "id": "zY8V9B5"
+>>>>>>> 0eea6ea5486ce6864544a3b7b8491b71b624d72d
     },
     {
       "title": "Nordstrom Guide to Men's Style",
-      "authors": "Tom J",
+      "authors": "Tom",
       "description": "The right suit can turn an interview into a job, a lunch meeting into a deal, maybe even a blind date into a marriage.So how does a guy tell his herringbone from his seersucker? Tailored for men of all stripes, Nordstrom Guide to Men's Style is the definitive handbook for dressing well. Richly illustrated chapters offer advice on how to wear (and accessorize) six key wardrobe components: suits, sport coats, trousers, shirts, ties, and tuxedos. With tips from tailors, a size chart, and plenty of photos, knowing what to wear when has never been easier.",
       "price": "35",
       "publishedDate": "2022-06-15",

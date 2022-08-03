@@ -46,10 +46,7 @@ const AdminEditPage = () => {
     saveEditedBook(editedBook);
     navigate("/admin");
   };
-  React.useEffect(() => {
-    getBookToEdit(id);
-  }, []);
-  console.log(bookToEdit);
+
   React.useEffect(() => {
     if (bookToEdit) {
       console.log(bookToEdit);
@@ -62,6 +59,9 @@ const AdminEditPage = () => {
       setThumbnail(bookToEdit.thumbnail);
     }
   }, [bookToEdit]);
+  React.useEffect(() => {
+    getBookToEdit(id);
+  }, []);
 
   return (
     <div className="admin-edit-page">
