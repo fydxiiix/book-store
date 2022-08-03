@@ -40,16 +40,16 @@ function AdminPage() {
             {books.map((item, index) => (
               <TableRow key={item.id}>
                 <TableCell>{index + 1}</TableCell>
-                <TableCell>{item.volumeInfo.title}</TableCell>
-                <TableCell>{item.volumeInfo.authors}</TableCell>
-                <TableCell>{item.volumeInfo.description}</TableCell>
+                <TableCell>{item.title}</TableCell>
+                <TableCell>{item.authors}</TableCell>
+                <TableCell>{item.description}</TableCell>
                 <TableCell>{item.price}$</TableCell>
-                <TableCell>{item.volumeInfo.publishedDate}</TableCell>
-                <TableCell>{item.volumeInfo.categories}</TableCell>
+                <TableCell>{item.publishedDate}</TableCell>
+                <TableCell>{item.categories}</TableCell>
                 <TableCell>
                   <img
                     width={100}
-                    src={item.volumeInfo.imageLinks.thumbnail}
+                    src={item.thumbnail}
                     alt=""
                   />
                 </TableCell>
