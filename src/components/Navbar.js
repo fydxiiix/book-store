@@ -171,7 +171,7 @@ export default function Navbar() {
         position="static"
         sx={{
           background:
-            "linear-gradient(60deg, rgba(240,197,69,1) 0%, rgba(223,133,88,1) 43%, rgba(125,75,28,1) 100%)",
+            "linear-gradient(117deg, rgba(144,0,85,1) 0%, rgba(147,11,128,1) 32%, rgba(23,80,131,1) 68%, rgba(57,0,162,1) 100%);",
         }}
       >
         <Toolbar
@@ -210,7 +210,9 @@ export default function Navbar() {
             ></Typography>
           </Box>
           <Link className="navbar-link main" id="booknetic" to="/">
-            BOOKNETIC
+            <div class="sign-wrap-1">
+              <span class="sign_word">BOOKNETIC</span>
+            </div>
           </Link>
           {/* <Box sx={{ flexGrow: 1 }} /> */}
 
