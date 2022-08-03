@@ -1,24 +1,29 @@
-import React from 'react'
-import {Container, Card,
-    CardActions,
-    CardContent,
-    CardMedia,
-    Button,
-    Typography} from "@mui/material"
-import { ClientContext } from "../context/Provider"
-import {Link} from "react-router-dom"
+import React from "react";
+import {
+  Container,
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Button,
+  Typography,
+} from "@mui/material";
+import { ClientContext } from "../context/Provider";
+import { Link } from "react-router-dom";
 
 function MainPage() {
+
     const {
         getBooks, books,
         addBookToBasket
     } = React.useContext(ClientContext); 
     
 
-    React.useEffect(() => {
-        getBooks()
-    }, []);
+  React.useEffect(() => {
+    getBooks();
+  }, []);
   return (
+
     <div className='main-page'>
 <Container>
 <h2>Catalogue</h2>
@@ -54,8 +59,9 @@ function MainPage() {
 </div>
 </Container>
 
+
     </div>
-  )
+  );
 }
 
-export default MainPage
+export default MainPage;
