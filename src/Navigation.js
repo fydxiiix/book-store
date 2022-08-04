@@ -5,6 +5,8 @@ import MainPage from "./pages/MainPage";
 import AdminAddPage from "./pages/AdminAddPage";
 import AdminEditPage from "./pages/AdminEditPage";
 import BasketPage from "./pages/BasketPage";
+import FavoritePage from "./pages/FavoritePage";
+import PaymentPage from "./pages/PaymentPage";
 import Navbar from "./components/Navbar";
 import Provider from "./context/Provider";
 import AdminProvider from "./context/AdminProvider";
@@ -21,6 +23,8 @@ function Navigation() {
             <Route path="/admin/add" element={<AdminAddPage />} />
             <Route path="/admin/edit/:id" element={<AdminEditPage />} />
             <Route path="/basket" element={<BasketPage />} />
+            <Route path="/payment" element={<PaymentPage />} />
+            <Route path="/favorite" element={<FavoritePage />} />
           </Routes>
         </AdminProvider>
       </BrowserRouter>

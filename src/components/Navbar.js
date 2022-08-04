@@ -185,7 +185,9 @@ export default function Navbar() {
               aria-label="open drawer"
               // sx={{ mr: 1 }}
             >
-              <MenuBookIcon />
+              <Link to="/">
+                <MenuBookIcon />
+              </Link>
             </IconButton>
             <Search className="navbar-search">
               <SearchIconWrapper>
@@ -196,7 +198,7 @@ export default function Navbar() {
                 onChange={(e) => {
                   setSearchWord(e.target.value);
                 }}
-                placeholder="Search…"
+                placeholder="Title, author…"
                 inputProps={{ "aria-label": "search" }}
                 style={{ width: "150px" }}
               />
@@ -210,8 +212,8 @@ export default function Navbar() {
             ></Typography>
           </Box>
           <Link className="navbar-link main" id="booknetic" to="/">
-            <div class="sign-wrap-1">
-              <span class="sign_word">BOOKNETIC</span>
+            <div className="sign-wrap-1">
+              <span className="sign_word">BOOKNETIC</span>
             </div>
           </Link>
           {/* <Box sx={{ flexGrow: 1 }} /> */}
@@ -232,7 +234,7 @@ export default function Navbar() {
               ADD
             </Link>
 
-            <Link to="/favotite">
+            <Link to="/favorite">
               <IconButton
                 size="large"
                 aria-label="show my favorites"
@@ -244,15 +246,15 @@ export default function Navbar() {
               </IconButton>
             </Link>
             <Link to="/basket">
-            <IconButton
-              size="large"
-              aria-label="show my shopping list"
-              color="inherit"
-            >
-              <Badge badgeContent={basketCount} color="error">
-                <ShoppingBasketIcon />
-              </Badge>
-            </IconButton>
+              <IconButton
+                size="large"
+                aria-label="show my shopping list"
+                color="inherit"
+              >
+                <Badge badgeContent={basketCount} color="error">
+                  <ShoppingBasketIcon />
+                </Badge>
+              </IconButton>
             </Link>
             <IconButton
               size="large"

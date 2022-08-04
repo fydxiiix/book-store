@@ -103,12 +103,30 @@ const AdminEditPage = () => {
             label="PublishedDate"
             variant="standard"
           />
-          <TextField
-            value={categories}
-            onChange={(e) => setCategories(e.target.value)}
-            label="Categories"
-            variant="standard"
-          />
+          <FormControl variant="outlined">
+            <InputLabel>Categories</InputLabel>
+            <Select
+              value={categories}
+              onChange={(e) => setCategories(e.target.value)}
+              label="Categories"
+            >
+              <MenuItem value="Law">Law</MenuItem>
+              <MenuItem value="Computers">Computers</MenuItem>
+              <MenuItem value="Automatic indexing">Automatic indexing</MenuItem>
+              <MenuItem value="Technology and Engineering">
+                Technology and Engineering
+              </MenuItem>
+              <MenuItem value="Psychology and medicine">
+                Psychology and medicine
+              </MenuItem>
+              <MenuItem value="Management">Management</MenuItem>
+              <MenuItem value="Literature">Literature</MenuItem>
+              <MenuItem value="Horror">Horror</MenuItem>
+              <MenuItem value="Detective">Detective</MenuItem>
+              <MenuItem value="Science">Science</MenuItem>
+              <MenuItem value="For kids">For kids</MenuItem>
+            </Select>
+          </FormControl>
           <TextField
             value={thumbnail}
             onChange={(e) => setThumbnail(e.target.value)}

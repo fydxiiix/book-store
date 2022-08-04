@@ -1,5 +1,6 @@
 import { Delete } from "@mui/icons-material";
 import {
+  Button,
   Table,
   TableBody,
   TableCell,
@@ -9,6 +10,7 @@ import {
 } from "@mui/material";
 import { Container } from "@mui/system";
 import React from "react";
+import { Link } from "react-router-dom";
 import { ClientContext } from "../context/Provider";
 
 function BasketPage() {
@@ -53,15 +55,41 @@ function BasketPage() {
                 <TableCell>{item.count}</TableCell>
                 <TableCell>{item.subPrice} $</TableCell>
                 <TableCell>
-                  <Delete onClick={() => deleteBook(item.id)}></Delete>
+                  <Delete
+                    className="basket-delete"
+                    onClick={() => deleteBook(item.id)}
+                  ></Delete>
                 </TableCell>
               </TableRow>
             ))}
           </TableBody>
           <TableFooter>
-            <TableRow>
-              <TableCell colSpan={4}>Total Amount:</TableCell>
-              <TableCell colSpan={1}>{basketBooks.totalPrice} $</TableCell>
+            <TableRow className="">
+              <TableCell
+                className="total-tablecell"
+                colSpan={4}
+                style={{ fontSize: "16px", fontWeight: "600" }}
+              >
+                Total Amount:
+              </TableCell>
+              <TableCell
+                className="total-tablecell"
+                colSpan={1}
+                style={{
+                  fontWeight: "500",
+                  fontSize: "16px",
+                  color: "gray",
+                }}
+              >
+                {basketBooks.totalPrice}$
+              </TableCell>
+              <TableCell className="total-tablecell" colSpan={5}>
+                {" "}
+                <Link to="/payment" className="total-link">
+                  {" "}
+                  Buy
+                </Link>
+              </TableCell>
             </TableRow>
           </TableFooter>
         </Table>
