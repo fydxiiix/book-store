@@ -41,16 +41,7 @@
       "id": "BZM3RS8"
     },
     {
-      "title": "Garminess",
-      "authors": "Mount",
-      "description": "Lorem",
-      "price": 200,
-      "publishedDate": "2022-08-02",
-      "categories": "Science",
-      "thumbnail": "https://kaylmoody.com/wp-content/uploads/2021/09/The-Elements-of-the-Crown-NEW-web-cover-600x900.jpg",
-      "id": "rEopjY-"
-    },
-    {
+
       "title": "The Little Prince",
       "authors": "Antoine de Saint-Exupéry",
       "description": "A pilot crashes in the Sahara Desert and encounters a strange young boy who calls himself the Little Prince.",
@@ -59,16 +50,6 @@
       "categories": "Literature",
       "thumbnail": "https://kbimages1-a.akamaihd.net/869050f5-1da7-4aa3-bc21-5c56388a5ea9/1200/1200/False/the-little-prince-52.jpg",
       "id": "eprpkhz"
-    },
-    {
-      "title": "sdkfj",
-      "authors": "sldkfj",
-      "description": "lsdkfj",
-      "price": 234,
-      "publishedDate": "12222-12-12",
-      "categories": "Detective",
-      "thumbnail": "asd",
-      "id": "GxSq1vg"
     }
   ]
 }
