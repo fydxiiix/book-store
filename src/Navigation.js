@@ -23,8 +23,10 @@ function Navigation() {
             <Route path="/admin/add" element={<AdminAddPage />} />
             <Route path="/admin/edit/:id" element={<AdminEditPage />} />
             <Route path="/basket" element={<BasketPage />} />
+
             <Route path="/payment" element={<PaymentPage />} />
             <Route path="/favorite" element={<FavoritePage />} />
+
           </Routes>
         </AdminProvider>
       </BrowserRouter>
