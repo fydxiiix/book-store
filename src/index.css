@@ -95,15 +95,19 @@ a {
   justify-content: end;
 }
 
-.total-link {
+.total-link,
+.payment-button {
   color: rgb(24, 22, 31);
   font-weight: 700;
   font-size: 15px;
-  border: 1px solid rgb(121, 121, 121);
+  border: 1px solid rgbrgb(206, 206, 206);
   padding: 7px;
   border-radius: 20px;
 }
 
+.center {
+  color: rgb(206, 206, 206);
+}
 .basket-delete {
   padding-left: 10px;
 }

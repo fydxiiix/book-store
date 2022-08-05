@@ -105,17 +105,17 @@ function Provider({ children }) {
     dispatch(action);
   };
 
-  // const getPrices = () => {
-  //   fetch(booksApi)
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       data.sort((a, b) => a.price - b.price);
-  //       let max = data[data.length - 1].price;
-  //       let min = data[0].price;
-  //       setFilterByPrice([min, max]);
-  //       setMinMax([min, max]);
-  //     });
-  // };
+  const getPrices = () => {
+    fetch(booksApi)
+      .then((res) => res.json())
+      .then((data) => {
+        data.sort((a, b) => a.price - b.price);
+        let max = data[data.length - 1].price;
+        let min = data[0].price;
+        setFilterByPrice([min, max]);
+        setMinMax([min, max]);
+      });
+  };
 
   const getBasketCount = () => {
     let basket = JSON.parse(localStorage.getItem("basket"));
@@ -144,6 +144,7 @@ function Provider({ children }) {
     pagesCount,
     currentPage,
     minMax,
+    getPrices,
     addBookToBasket,
     getBooks,
     getBooksFromBasket,
