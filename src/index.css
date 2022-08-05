@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +7,19 @@
 }
 
 body {
-  background-color: #ffff;
+  background-image: url(https://images.unsplash.com/photo-1456743625079-86a97ff8bc86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80);
 }
 
+.main-wrapper {
+  background-color: rgba(35, 4, 63, 0.281);
+}
+.sub-wrapper {
+  background-color: rgba(255, 255, 255, 0.596);
+  padding: 10px;
+}
+.sub-wrapper .MuiTextField-root {
+  margin-top: 20px;
+}
 .main-page {
   padding: 30px 0;
 }
@@ -29,7 +38,13 @@ h2 {
   font-size: 40px;
   text-align: center;
   margin-bottom: 40px;
-  color: rgb(47, 30, 94);
+  color: rgb(255, 255, 255);
+}
+h4 {
+  font-size: 20px;
+  padding-top: 20px;
+  text-align: center;
+  color: rgb(0, 0, 0);
 }
 
 .products {
@@ -97,7 +112,8 @@ a {
 .filter-block {
   width: 400px;
   margin-bottom: 40px;
-  justify-content: end;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .total-link,
@@ -117,7 +133,6 @@ a {
   padding-left: 10px;
 }
 
-
 @keyframes neon-1 {
   from {
     text-shadow: 0 0 6px rgba(86, 94, 93, 0.92),
@@ -133,7 +148,7 @@ a {
   }
 }
 
-@media all and (max-width:975px) {
+@media all and (max-width: 975px) {
   .sign-wrap-1 .sign_word {
     font-size: 40px;
   }
@@ -142,15 +157,14 @@ a {
   }
 }
 
-@media all and (max-width:900px) {
-  .title_card{
+@media all and (max-width: 900px) {
+  .title_card {
     font-size: 20px !important;
   }
 }
 
-@media all and (max-width:850px) {
-  
-  .products{
+@media all and (max-width: 850px) {
+  .products {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,51 +172,47 @@ a {
   .product-card {
     width: 70%;
   }
+}
 
-} 
-
-@media all and (max-width:750px) {
+@media all and (max-width: 750px) {
   .sign-wrap-1 .sign_word {
     font-size: 30px;
   }
   .main-page h2 {
     font-size: 20px;
   }
-
 }
 
-@media all and (max-width:650px) {
-.search_custom{
-  width: 40px !important;
-}
-.filter-block {
-  width: 300px
-}
+@media all and (max-width: 650px) {
+  .search_custom {
+    width: 40px !important;
+  }
+  .filter-block {
+    width: 300px;
+  }
 }
 
-@media all and (max-width:490px) {
+@media all and (max-width: 490px) {
   .sign-wrap-1 .sign_word {
     font-size: 20px;
   }
   .filter-block {
-    width: 200px
+    width: 200px;
   }
-  .title_card{
+  .title_card {
     font-size: 15px !important;
   }
   .title_price {
     font-size: 10px !important;
   }
-
 }
 
-@media all and (max-width:430px) {
+@media all and (max-width: 430px) {
   .sign-wrap-1 .sign_word {
     /* font-size: 20px; */
     letter-spacing: normal;
   }
-  .search_custom{
+  .search_custom {
     width: 20px !important;
   }
-
 }
