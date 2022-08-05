@@ -109,7 +109,7 @@ export default function Navbar() {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      {/* <MenuItem onClick={handleMenuClose}>My account</MenuItem> */}
     </Menu>
   );
 
@@ -201,6 +201,7 @@ export default function Navbar() {
                 placeholder="Title, author…"
                 inputProps={{ "aria-label": "search" }}
                 style={{ width: "150px" }}
+                className="search_custom"
               />
             </Search>
 

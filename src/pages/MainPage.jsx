@@ -49,14 +49,18 @@ function MainPage() {
               <CardMedia component="img" height="240" image={item.thumbnail} />
               <CardContent>
                 <Typography
-                  className="product-card-title"
+                  className="product-card-title title_card"
                   gutterBottom
                   variant="h5"
                   component="div"
                 >
                   {item.title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  className="title_price"
+                >
                   Price: {item.price}$
                 </Typography>
               </CardContent>
