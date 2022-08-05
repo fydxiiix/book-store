@@ -32,7 +32,6 @@ function MainPage() {
   }, [filterByPrice, currentPage]);
 
   return (
-
     <div className="main-wrapper">
       <div className="main-page">
         <Container>
@@ -53,7 +52,7 @@ function MainPage() {
                 onChange={(e, newValue) => setFilterByPrice(newValue)}
                 defaultValue={30}
                 sx={{
-                  width: 300,
+                  width: 200,
                   color: "purple",
                   "& .MuiSlider-thumb": {
                     borderRadius: "50px",
@@ -139,7 +138,6 @@ function MainPage() {
           <p className="footer-p">© 2022 All Rights Reserved </p>
         </Container>
       </div>
-
     </div>
   );
 }
