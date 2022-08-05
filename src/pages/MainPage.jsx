@@ -11,6 +11,7 @@ import {
   Pagination,
 } from "@mui/material";
 import { ClientContext } from "../context/Provider";
+import { Link } from "react-router-dom";
 
 function MainPage() {
   const {
@@ -31,10 +32,11 @@ function MainPage() {
   }, [filterByPrice, currentPage]);
 
   return (
-
     <div className="main-wrapper">
       <div className="main-page">
         <Container>
+          <div className="main-banner"></div>
+
           <h2>Catalogue</h2>
           <div className="sub-wrapper">
             <div
@@ -119,9 +121,23 @@ function MainPage() {
               />
             </div>
           </div>
+          <div className="footer">
+            <Link to="#">
+              <i className="fa fa-apple" id="apple"></i>
+            </Link>
+            <Link to="#">
+              <i className="fa fa-twitter" id="twitter"></i>
+            </Link>
+            <Link to="#">
+              <i className="fa fa-github-square github" id="github"></i>
+            </Link>
+            <Link to="#">
+              <i className="fa fa-facebook-square" id="facebook"></i>
+            </Link>
+          </div>
+          <p className="footer-p">© 2022 All Rights Reserved </p>
         </Container>
       </div>
-
     </div>
   );
 }
