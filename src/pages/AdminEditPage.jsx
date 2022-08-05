@@ -64,80 +64,87 @@ const AdminEditPage = () => {
   }, []);
 
   return (
-    <div className="admin-edit-page">
-      <Container>
-        <h2>Edit</h2>
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            handleSubmit();
-          }}
-        >
-          <TextField
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            label="Title"
-            variant="standard"
-          />
-          <TextField
-            value={authors}
-            onChange={(e) => setAuthors(e.target.value)}
-            label="Authors"
-            variant="standard"
-          />
-          <TextField
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            label="Description"
-            variant="standard"
-          />
-          <TextField
-            value={price}
-            onChange={(e) => setPrice(e.target.value)}
-            label="Price"
-            variant="standard"
-          />
-          <TextField
-            value={publishedDate}
-            onChange={(e) => setPublishedDate(e.target.value)}
-            label="PublishedDate"
-            variant="standard"
-          />
-          <FormControl variant="outlined">
-            <InputLabel>Categories</InputLabel>
-            <Select
-              value={categories}
-              onChange={(e) => setCategories(e.target.value)}
-              label="Categories"
+    <div className="main-wrapper">
+      <div className="admin-edit-page">
+        <Container>
+          <h2>Edit</h2>
+          <div className="sub-wrapper">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                handleSubmit();
+              }}
             >
-              <MenuItem value="Law">Law</MenuItem>
-              <MenuItem value="Computers">Computers</MenuItem>
-              <MenuItem value="Automatic indexing">Automatic indexing</MenuItem>
-              <MenuItem value="Technology and Engineering">
-                Technology and Engineering
-              </MenuItem>
-              <MenuItem value="Psychology and medicine">
-                Psychology and medicine
-              </MenuItem>
-              <MenuItem value="Management">Management</MenuItem>
-              <MenuItem value="Literature">Literature</MenuItem>
-              <MenuItem value="Horror">Horror</MenuItem>
-              <MenuItem value="Detective">Detective</MenuItem>
-              <MenuItem value="Science">Science</MenuItem>
-              <MenuItem value="For kids">For kids</MenuItem>
-            </Select>
-          </FormControl>
-          <TextField
-            value={thumbnail}
-            onChange={(e) => setThumbnail(e.target.value)}
-            label="Photo"
-            variant="standard"
-          />
-          <Button variant="outlined" type="submit">
-            Save
-          </Button>
-        </form>
-      </Container>
+              <TextField
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+                label="Title"
+                variant="standard"
+                // className="sub-wrapper"
+              />
+              <TextField
+                value={authors}
+                onChange={(e) => setAuthors(e.target.value)}
+                label="Authors"
+                variant="standard"
+              />
+              <TextField
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                label="Description"
+                variant="standard"
+              />
+              <TextField
+                value={price}
+                onChange={(e) => setPrice(e.target.value)}
+                label="Price"
+                variant="standard"
+              />
+              <TextField
+                value={publishedDate}
+                onChange={(e) => setPublishedDate(e.target.value)}
+                label="PublishedDate"
+                variant="standard"
+              />
+              <FormControl variant="outlined">
+                <InputLabel>Categories</InputLabel>
+                <Select
+                  value={categories}
+                  onChange={(e) => setCategories(e.target.value)}
+                  label="Categories"
+                >
+                  <MenuItem value="Law">Law</MenuItem>
+                  <MenuItem value="Computers">Computers</MenuItem>
+                  <MenuItem value="Automatic indexing">
+                    Automatic indexing
+                  </MenuItem>
+                  <MenuItem value="Technology and Engineering">
+                    Technology and Engineering
+                  </MenuItem>
+                  <MenuItem value="Psychology and medicine">
+                    Psychology and medicine
+                  </MenuItem>
+                  <MenuItem value="Management">Management</MenuItem>
+                  <MenuItem value="Literature">Literature</MenuItem>
+                  <MenuItem value="Horror">Horror</MenuItem>
+                  <MenuItem value="Detective">Detective</MenuItem>
+                  <MenuItem value="Science">Science</MenuItem>
+                  <MenuItem value="For kids">For kids</MenuItem>
+                </Select>
+              </FormControl>
+              <TextField
+                value={thumbnail}
+                onChange={(e) => setThumbnail(e.target.value)}
+                label="Photo"
+                variant="standard"
+              />
+              <Button variant="outlined" type="submit">
+                Save
+              </Button>
+            </form>
+          </div>
+        </Container>
+      </div>
     </div>
   );
 };
