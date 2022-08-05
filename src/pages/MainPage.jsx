@@ -47,7 +47,8 @@ function MainPage() {
            </Typography>
          </CardContent>
          <CardActions>
-           <Button onClick={() => addBookToBasket(item)}
+           <Button 
+           onClick={() => addBookToBasket(item)}
            variant="outlined"
            size="small">ADD TO CART</Button>
            <Button 
