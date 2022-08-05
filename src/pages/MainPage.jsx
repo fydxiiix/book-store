@@ -32,6 +32,7 @@ function MainPage() {
   }, [filterByPrice, currentPage]);
 
   return (
+
     <div className="main-wrapper">
       <div className="main-page">
         <Container>
@@ -138,6 +139,7 @@ function MainPage() {
           <p className="footer-p">© 2022 All Rights Reserved </p>
         </Container>
       </div>
+
     </div>
   );
 }
