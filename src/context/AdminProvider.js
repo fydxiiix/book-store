@@ -14,7 +14,7 @@ const reducer = (state, action) => {
     return {
       ...state,
       bookToEdit: action.payload,
-    }
+    };
   }
   return state;
 };
@@ -22,7 +22,7 @@ const reducer = (state, action) => {
 function AdminProvider({ children }) {
   const [state, dispatch] = React.useReducer(reducer, {
     books: [],
-    bookToEdit: null
+    bookToEdit: null,
   });
 
   const sendNewBook = (newBook) => {
@@ -55,34 +55,34 @@ function AdminProvider({ children }) {
 
   const getBookToEdit = (id) => {
     fetch(`${booksApi}/${id}`)
-    .then((res) => res.json())
-    .then((data) => {
-      let action = { 
-        type: "GET_BOOK_TO_EDIT",
-        payload: data
-      }
-      dispatch(action)
-    })
-  }
+      .then((res) => res.json())
+      .then((data) => {
+        let action = {
+          type: "GET_BOOK_TO_EDIT",
+          payload: data,
+        };
+        dispatch(action);
+      });
+  };
 
-const saveEditedBook = (editedBook) => {
-fetch (`${booksApi}/${editedBook.id}`, {
-  method: "PATCH", 
-  headers: {
-    "Content-Type": "application/json",
-  }, 
-  body: JSON.stringify(editedBook)
-})
-}
+  const saveEditedBook = (editedBook) => {
+    fetch(`${booksApi}/${editedBook.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(editedBook),
+    });
+  };
 
   const data = {
     books: state.books,
-    bookToEdit: state.bookToEdit, 
+    bookToEdit: state.bookToEdit,
     getBooks,
     deleteBook,
     sendNewBook,
     getBookToEdit,
-    saveEditedBook
+    saveEditedBook,
   };
   return <AdminContext.Provider value={data}>{children}</AdminContext.Provider>;
 }

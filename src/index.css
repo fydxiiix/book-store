@@ -19,31 +19,17 @@ body {
 }
 .sign-wrap-1 .sign_word {
   font-size: 50px;
-  /* font-weight: bold; */
-  /* font-family: "Nerko One", cursive; */
+
   color: #fff;
   text-transform: uppercase;
   animation: neon-1 0.1s ease-in-out infinite alternate;
 }
-@keyframes neon-1 {
-  from {
-    text-shadow: 0 0 6px rgba(86, 94, 93, 0.92),
-      0 0 20px rgba(202, 228, 225, 0.34), 0 0 10px rgba(52, 74, 92, 0.52),
-      0 0 11px rgba(108, 148, 180, 0.92), 0 0 20px rgba(65, 87, 105, 0.78),
-      0 0 34px rgba(71, 44, 97, 0.92);
-  }
-  to {
-    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
-      0 0 20px rgba(125, 167, 161, 0.42), 0 0 6px rgba(95, 116, 133, 0.58),
-      0 0 17px rgba(61, 86, 107, 0.84), 0 0 20px rgba(124, 99, 136, 0.88),
-      0 0 30px rgb(162, 110, 168);
-  }
-}
+
 h2 {
   font-size: 40px;
   text-align: center;
   margin-bottom: 40px;
-  color: rgb(0, 0, 0);
+  color: rgb(47, 30, 94);
 }
 
 .products {
@@ -64,6 +50,15 @@ h2 {
 .navbar-link {
   padding: 0 5px;
 }
+.payment-link {
+  color: rgb(47, 30, 94);
+  border-radius: 20px;
+  border: 1px solid rgb(207, 207, 207);
+  padding: 10px;
+  /* display: flex; */
+  /* align-items: center; */
+  flex-direction: column;
+}
 
 a {
   color: unset;
@@ -72,12 +67,15 @@ a {
 }
 #booknetic {
   font-size: 40px;
-  letter-spacing: 6px;
+  letter-spacing: 10px;
 }
 
 .admin-add-page,
-.admin-edit-page {
-  padding-top: 30px;
+.admin-edit-page,
+.admin-page,
+.basket-page,
+.payment-page {
+  padding-top: 40px;
 }
 
 .admin-add-page form,
@@ -89,4 +87,38 @@ a {
 .admin-add-page button,
 .admin-edit-page button {
   margin-top: 20px;
+}
+
+.filter-block {
+  width: 400px;
+  margin-bottom: 40px;
+  justify-content: end;
+}
+
+.total-link {
+  color: rgb(24, 22, 31);
+  font-weight: 700;
+  font-size: 15px;
+  border: 1px solid rgb(121, 121, 121);
+  padding: 7px;
+  border-radius: 20px;
+}
+
+.basket-delete {
+  padding-left: 10px;
+}
+
+@keyframes neon-1 {
+  from {
+    text-shadow: 0 0 6px rgba(86, 94, 93, 0.92),
+      0 0 20px rgba(202, 228, 225, 0.34), 0 0 10px rgba(52, 74, 92, 0.52),
+      0 0 11px rgba(108, 148, 180, 0.92), 0 0 20px rgba(65, 87, 105, 0.78),
+      0 0 34px rgba(71, 44, 97, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 20px rgba(125, 167, 161, 0.42), 0 0 6px rgba(95, 116, 133, 0.58),
+      0 0 17px rgba(61, 86, 107, 0.84), 0 0 20px rgba(124, 99, 136, 0.88),
+      0 0 30px rgb(162, 110, 168);
+  }
 }

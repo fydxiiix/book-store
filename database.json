@@ -1,27 +1,6 @@
 {
   "books": [
     {
-
-      "title": "Кирсти Эплбаум: Середнячок",
-      "authors": "Эплбаум Кирстиy",
-      "description": "Одиннадцатилетняя Мэгги живет в Феннис Вике, защищенном боярышниковой изгородью от внешнего мира, где бушует Тихая война и шныряют грязные опасные бродяги... Ее брат Джед - старший. Старшие - особенные. Как только достигают четырнадцати, они отправляются исполнять свое великое предназначение - героически сражаться, чтобы дома их родные были в безопасности. Старших любят и уважают. Очаровательный Триг - младший. А Мэгги - Середнячок. Хуже не придумаешь, невидимка, от которой ничего не ждут. Но все меняется, когда она встречает бродягу Уну, которая выглядит совсем не опасной. И похоже, ей нужна помощь... Для среднего школьного возраста. Подробнее: https://www.labirint.ru/books/844797/",
-      "price": "67",
-      "publishedDate": "2021-02-02",
-      "categories": "For kids",
-      "thumbnail": "-",
-      "id": "FdAB9Wy"
-    },
-    {
-      "title": "fhjf",
-      "authors": "",
-      "description": "",
-      "price": "",
-      "publishedDate": "",
-      "categories": "",
-      "thumbnail": "",
-      "id": "zY8V9B5"
-    },
-    {
       "title": "Nordstrom Guide to Men's Style",
       "authors": "Tom",
       "description": "The right suit can turn an interview into a job, a lunch meeting into a deal, maybe even a blind date into a marriage.So how does a guy tell his herringbone from his seersucker? Tailored for men of all stripes, Nordstrom Guide to Men's Style is the definitive handbook for dressing well. Richly illustrated chapters offer advice on how to wear (and accessorize) six key wardrobe components: suits, sport coats, trousers, shirts, ties, and tuxedos. With tips from tailors, a size chart, and plenty of photos, knowing what to wear when has never been easier.",
@@ -37,7 +16,7 @@
       "description": "Described by The New York Times as, \"a treasure of fashion insiders,\" Take Ivy was originally published in Japan in 1965, setting off an explosion of American-influenced \"Ivy Style\" fashion among students in the trendy Ginza shopping district of Tokyo. The product of four sartorial style enthusiasts, Take Ivy is a collection of candid photographs shot on the campuses of America's elite, Ivy League universities. The series focuses on men and their clothes, perfectly encapsulating the unique academic fashion of the era. Whether lounging in the quad, studying in the library, riding bikes, in class, or at the boathouse, the subjects of Take Ivy are impeccably and distinctively dressed in the finest American-made garments of the time.  Take Ivy is now considered a definitive document of this particular style, and rare original copies are highly sought after by \"trad\" devotees worldwide. A small-run reprint came out in Japan in 2006 and sold out almost immediately. Now, for the first time ever, powerHouse is reviving this classic tome with an all-new English translation. Ivy style has never been more popular, in Japan or stateside, proving its timeless and transcendent appeal. Take Ivy has survived the decades and is an essential object for anyone interested in the history or future of fashion.",
       "price": "45",
       "publishedDate": "2020-06-04",
-      "categories": "Management",
+      "categories": "Literature",
       "thumbnail": "https://www.dmarge.com/wp-content/uploads/2019/09/Take-Ivy.jpg",
       "id": "K600IQP"
     },
@@ -60,6 +39,36 @@
       "categories": "Management",
       "thumbnail": "https://www.dmarge.com/wp-content/uploads/2019/09/Men-and-Style-Essays-Interviews-and-Considerations.jpg",
       "id": "BZM3RS8"
+    },
+    {
+      "title": "SL 2300-D",
+      "authors": "Daniel Wellington",
+      "description": "Lorem",
+      "price": "300",
+      "publishedDate": "2022-08-01",
+      "categories": "Horror",
+      "thumbnail": "-",
+      "id": "VSgUTF5"
+    },
+    {
+      "title": "Garminess",
+      "authors": "Mount",
+      "description": "Lorem",
+      "price": "200",
+      "publishedDate": "2022-08-02",
+      "categories": "Science",
+      "thumbnail": "-",
+      "id": "rEopjY-"
+    },
+    {
+      "title": "The Little Prince",
+      "authors": "Antoine de Saint-Exupéry",
+      "description": "A pilot crashes in the Sahara Desert and encounters a strange young boy who calls himself the Little Prince. The Little Prince has traveled there from his home on a lonely, distant asteroid with a single rose. The story that follows is a beautiful and at times heartbreaking meditation on human nature.",
+      "price": "14",
+      "publishedDate": "1993-04-16",
+      "categories": "Literature",
+      "thumbnail": "https://kbimages1-a.akamaihd.net/869050f5-1da7-4aa3-bc21-5c56388a5ea9/1200/1200/False/the-little-prince-52.jpg",
+      "id": "eprpkhz"
     }
   ]
 }
