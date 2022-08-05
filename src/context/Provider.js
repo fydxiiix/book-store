@@ -21,6 +21,18 @@ const reducer = (state, action) => {
       ...state,
       basketCount: action.payload,
     };
+  } 
+  if (action.type === "GET_BOOKS_FROM_FAVORITE") {
+    return {
+      ...state, 
+      favoriteBooks: action.payload,
+    };
+  }
+  if (action.type === "GET_FAVORITE_COUNT") {
+    return {
+      ...state,
+      favoriteCount: action.payload,
+    }
   }
   return state;
 };
@@ -33,6 +45,11 @@ function Provider({ children }) {
       totalPrice: 0,
     },
     basketCount: 0,
+    favoriteBooks: {
+      products: [], 
+      totalPrice:0,
+    }, 
+    favoriteCount:0,
   });
 
   const [searchWord, setSearchWord] = React.useState("");
@@ -95,11 +112,56 @@ function Provider({ children }) {
     getBasketCount();
   };
 
+  const addBookToFavorite = (book) => {
+    let favorite = JSON.parse(localStorage.getItem("favorite"));
+    if (!favorite) {
+      favorite = {
+        totalPrice: 0,
+        products: [],
+      };
+    }
+    let bookToFavorite = {
+      ...book,
+      count: 1,
+      subPrice: book.price,
+    };
+    let check = favorite.products.find((item) => {
+      return item.id === bookToFavorite.id;
+    });
+    if (check) {
+      favorite.products = favorite.products.map((item) => {
+        if (item.id === bookToFavorite.id) {
+          item.count++;
+          item.subPrice = item.count * item.price;
+          return item;
+        }
+        return item;
+      });
+    } else {
+      favorite.products.push(bookToFavorite);
+    }
+    favorite.totalPrice = favorite.products.reduce((prev, item) => {
+      return parseInt(prev) + parseInt(item.subPrice);
+    }, 0);
+    localStorage.setItem("favorite", JSON.stringify(favorite));
+    getFavoriteCount();
+  };
+
+
   const getBooksFromBasket = () => {
     let basket = JSON.parse(localStorage.getItem("basket"));
     let action = {
       type: "GET_BOOKS_FROM_BASKET",
       payload: basket,
+    };
+    dispatch(action);
+  };
+
+  const getBooksFromFavorite = () => {
+    let favorite = JSON.parse(localStorage.getItem("favorite"));
+    let action = {
+      type: "GET_BOOKS_FROM_FAVORITE",
+      payload: favorite,
     };
     dispatch(action);
   };
@@ -130,6 +192,25 @@ function Provider({ children }) {
     dispatch(action);
   };
 
+
+  const getFavoriteCount = () => {
+    let favorite = JSON.parse(localStorage.getItem("favorite"));
+    if (!favorite) {
+      favorite = {
+        products: [],
+      };
+    }
+    let action = {
+      type: "GET_FAVORITE_COUNT",
+      payload: favorite.products.length,
+    };
+    dispatch(action);
+  };
+React.useEffect(() => {
+  getPrices();
+  getFavoriteCount()
+}, [])
+
   const deleteBookFromCart = (id) => {
     let basket = JSON.parse(localStorage.getItem("basket"));
 
@@ -148,6 +229,8 @@ function Provider({ children }) {
     books: state.books,
     basketBooks: state.basketBooks,
     basketCount: state.basketCount,
+    favoriteBooks: state.favoriteBooks,
+    favoriteCount: state.favoriteCount,
     searchWord,
     filterByPrice,
     pagesCount,
@@ -155,8 +238,10 @@ function Provider({ children }) {
     minMax,
     getPrices,
     addBookToBasket,
+    addBookToFavorite,
     getBooks,
     getBooksFromBasket,
+    getBooksFromFavorite,
     setFilterByPrice,
     setSearchWord,
     setCurrentPage,

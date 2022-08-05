@@ -18,6 +18,7 @@ function MainPage() {
     books,
     filterByPrice,
     addBookToBasket,
+    addBookToFavorite,
     setFilterByPrice,
     pagesCount,
     currentPage,
@@ -30,6 +31,7 @@ function MainPage() {
   }, [filterByPrice, currentPage]);
 
   return (
+
     <div className="main-wrapper">
       <div className="main-page">
         <Container>
@@ -95,6 +97,7 @@ function MainPage() {
                       variant="outlined"
                       size="small"
                       className="card-button"
+                      onClick={() => addBookToFavorite(item)}
                     >
                       ADD TO FAVORITES
                     </Button>
@@ -118,6 +121,7 @@ function MainPage() {
           </div>
         </Container>
       </div>
+
     </div>
   );
 }
