@@ -41,6 +41,14 @@ function MainPage() {
             valueLabelDisplay="auto"
             value={filterByPrice}
             onChange={(e, newValue) => setFilterByPrice(newValue)}
+            defaultValue={30}
+            sx={{
+              width: 300,
+              color: "purple",
+              "& .MuiSlider-thumb": {
+                borderRadius: "50px",
+              },
+            }}
           />
         </div>
         <div className="products">
@@ -81,12 +89,13 @@ function MainPage() {
             </Card>
           ))}
         </div>
-        <div className="pagination-block">
+        <div
+          className="pagination-block"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
           <Pagination
             onChange={(_, newValue) => setCurrentPage(newValue)}
             count={pagesCount}
-            color="primary"
-            // style={{ color: "red" }}
           />
         </div>
       </Container>

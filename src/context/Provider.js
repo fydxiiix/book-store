@@ -36,8 +36,8 @@ function Provider({ children }) {
   });
 
   const [searchWord, setSearchWord] = React.useState("");
-  const [filterByPrice, setFilterByPrice] = React.useState([0, 9999]);
-  const [minMax, setMinMax] = React.useState([0, 9999]);
+  const [filterByPrice, setFilterByPrice] = React.useState([0, 999]);
+  const [minMax, setMinMax] = React.useState([0, 999]);
 
   const limit = 3;
   const [pagesCount, setPagesCount] = React.useState(1);
@@ -48,7 +48,7 @@ function Provider({ children }) {
       `${booksApi}?q=${searchWord}&price_gte=${filterByPrice[0]}&price_lte=${filterByPrice[1]}&_limit=${limit}&_page=${currentPage}`
     )
       .then((res) => {
-        let count = Math.ceil(res.headers.get("X-Total-Count"));
+        let count = Math.ceil(res.headers.get("X-Total-Count") / limit);
         setPagesCount(count);
         return res.json();
       })
@@ -60,7 +60,6 @@ function Provider({ children }) {
         dispatch(action);
       });
   };
-
   const addBookToBasket = (book) => {
     let basket = JSON.parse(localStorage.getItem("basket"));
     if (!basket) {
@@ -90,7 +89,7 @@ function Provider({ children }) {
       basket.products.push(bookToBasket);
     }
     basket.totalPrice = basket.products.reduce((prev, item) => {
-      return prev + item.subPrice;
+      return parseInt(prev) + parseInt(item.subPrice);
     }, 0);
     localStorage.setItem("basket", JSON.stringify(basket));
     getBasketCount();
@@ -130,8 +129,18 @@ function Provider({ children }) {
     };
     dispatch(action);
   };
+
+  const deleteBookFromCart = (id) => {
+    let basket = JSON.parse(localStorage.getItem("basket"));
+
+    console.log(basket);
+    basket.totalPrice = basket.products.filter((item) => {
+      // вернуть все кроме того айтем с которым совпадает айди из аргумента
+    });
+    //  вызвать функцию гет для корзины
+  };
   React.useEffect(() => {
-    // getPrices();
+    getPrices();
     getBasketCount();
   }, []);
 

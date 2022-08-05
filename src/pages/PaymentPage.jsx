@@ -7,7 +7,6 @@ import {
   TableCell,
   Table,
 } from "@mui/material";
-
 import { ClientContext } from "../context/Provider";
 
 function PaymentPage() {
@@ -20,7 +19,11 @@ function PaymentPage() {
           style={{ display: "flex", justifyContent: "center" }}
         >
           <TableHead>
-            <TableRow style={{ border: "solid 1px rgb(206, 206, 206)" }}>
+            <TableRow
+              style={{
+                border: "solid 1px rgb(206, 206, 206)",
+              }}
+            >
               <TableRow>
                 <TableCell>Payment amount:</TableCell>
                 <TableCell>$ </TableCell>

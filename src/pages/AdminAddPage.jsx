@@ -78,7 +78,7 @@ function AdminAddPage() {
           />
           <TextField
             value={price}
-            onChange={(e) => setPrice(e.target.value)}
+            onChange={(e) => setPrice(parseInt(e.target.value))}
             label="Price"
             variant="outlined"
             type="number"
@@ -86,7 +86,7 @@ function AdminAddPage() {
           <TextField
             value={publishedDate}
             onChange={(e) => setPublishedDate(e.target.value)}
-            label="Date of publication"
+            // label="Date of publication"
             variant="outlined"
             type="date"
           />
