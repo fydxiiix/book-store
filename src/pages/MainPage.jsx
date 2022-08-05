@@ -18,6 +18,7 @@ function MainPage() {
     books,
     filterByPrice,
     addBookToBasket,
+    addBookToFavorite,
     setFilterByPrice,
     pagesCount,
     currentPage,
@@ -86,6 +87,7 @@ function MainPage() {
                   variant="outlined"
                   size="small"
                   className="card-button"
+                  onClick={() => addBookToFavorite(item)}
                 >
                   ADD TO FAVORITES
                 </Button>

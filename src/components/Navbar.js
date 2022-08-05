@@ -62,7 +62,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function Navbar() {
-  const { searchWord, setSearchWord, getBooks, basketCount } =
+  const { searchWord, setSearchWord, getBooks, basketCount, favoriteCount } =
     React.useContext(ClientContext);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -109,6 +109,7 @@ export default function Navbar() {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+      {/* <MenuItem onClick={handleMenuClose}>test</MenuItem> */}
       {/* <MenuItem onClick={handleMenuClose}>My account</MenuItem> */}
     </Menu>
   );
@@ -131,37 +132,41 @@ export default function Navbar() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <IconButton size="large" aria-label="show my favorites" color="inherit">
+<Link to="/favorite">
+        {/* <IconButton size="large" aria-label="show my favorites" color="inherit">
           <Badge badgeContent={4} color="error">
             <FavoriteIcon />
           </Badge>
-        </IconButton>
+        </IconButton> */}
         <p>Favorite</p>
+        </Link>
       </MenuItem>
+
       <MenuItem>
-        <IconButton
+      <Link to="/basket">
+        {/* <IconButton
           size="large"
           aria-label="show my shopping list"
-          color="inherit"
-        >
+          color="inherit" >
           <Badge badgeContent={17} color="error">
             <ShoppingBasketIcon />
           </Badge>
-        </IconButton>
+        </IconButton> */}
         <p>Basket</p>
+        </Link>
       </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          size="large"
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
-        <p>Profile</p>
-      </MenuItem>
+
+<MenuItem>
+<Link to="/admin">Admin
+</Link>
+</MenuItem>
+
+<MenuItem>
+<Link to="/admin/add"
+>Add
+</Link>
+</MenuItem>
+
     </Menu>
   );
 
@@ -241,7 +246,7 @@ export default function Navbar() {
                 aria-label="show my favorites"
                 color="inherit"
               >
-                <Badge badgeContent={4} color="error">
+                <Badge badgeContent={favoriteCount} color="error">
                   <FavoriteIcon />
                 </Badge>
               </IconButton>
@@ -257,17 +262,7 @@ export default function Navbar() {
                 </Badge>
               </IconButton>
             </Link>
-            <IconButton
-              size="large"
-              edge="end"
-              aria-label="account of current user"
-              aria-controls={menuId}
-              aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
-              color="inherit"
-            >
-              <AccountCircle />
-            </IconButton>
+          
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
