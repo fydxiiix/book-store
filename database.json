@@ -1,37 +1,37 @@
 {
   "books": [
     {
-      "title": "Nordstrom Guide to Men's Style",
+      "title": "Sorcery of Queen",
       "authors": "Tom",
-      "description": "The right suit can turn an interview into a job, a lunch meeting into a deal, maybe even a blind date into a marriage.So how does a guy tell his herringbone from his seersucker? Tailored for men of all stripes, Nordstrom Guide to Men's Style is the definitive handbook for dressing well. Richly illustrated chapters offer advice on how to wear (and accessorize) six key wardrobe components: suits, sport coats, trousers, shirts, ties, and tuxedos. With tips from tailors, a size chart, and plenty of photos, knowing what to wear when has never been easier.",
+      "description": "The right suit can turn an interview into a job.",
       "price": 35,
       "publishedDate": "2022-06-15",
       "categories": "Management",
-      "thumbnail": "https://www.dmarge.com/wp-content/uploads/2019/09/Nordstrom-Guide-to-Mens-Style.jpg",
+      "thumbnail": "https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781529016192.jpg",
       "id": "FZjX0c9"
     },
     {
-      "title": "Take Ivy",
+      "title": "The Untold Story",
       "authors": "Shosuke I",
-      "description": "Described by The New York Times as, \"a treasure of fashion insiders,\" Take Ivy was originally published in Japan in 1965, setting off an explosion of American-influenced \"Ivy Style\" fashion among students in the trendy Ginza shopping district of Tokyo. The product of four sartorial style enthusiasts, Take Ivy is a collection of candid photographs shot on the campuses of America's elite, Ivy League universities. The series focuses on men and their clothes, perfectly encapsulating the unique academic fashion of the era. Whether lounging in the quad, studying in the library, riding bikes, in class, or at the boathouse, the subjects of Take Ivy are impeccably and distinctively dressed in the finest American-made garments of the time.  Take Ivy is now considered a definitive document of this particular style, and rare original copies are highly sought after by \"trad\" devotees worldwide. A small-run reprint came out in Japan in 2006 and sold out almost immediately. Now, for the first time ever, powerHouse is reviving this classic tome with an all-new English translation. Ivy style has never been more popular, in Japan or stateside, proving its timeless and transcendent appeal. Take Ivy has survived the decades and is an essential object for anyone interested in the history or future of fashion.",
+      "description": "Described by The New York Times.",
       "price": 45,
       "publishedDate": "2020-06-04",
       "categories": "Literature",
-      "thumbnail": "https://www.dmarge.com/wp-content/uploads/2019/09/Take-Ivy.jpg",
+      "thumbnail": "https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781529000634.jpg",
       "id": "K600IQP"
     },
     {
-      "title": "How To Be a Gentleman - Bereolaesque: The Contemporary Gentleman & Etiquette Book For The Urban Sophisticate",
+      "title": "The color of dragons",
       "authors": "Entinan",
-      "description": "WARNING: ETIQUETTE IS BACK ... THIS TIME IT'S SEXY! The old-fashioned, repressed, bland man has been banished to the Himalayas and a new breed is taking center stage. He is a man of style, sophistication, and security, just as strong and confident as his predecessor, but far more diverse in his interests, his tastes, and, most importantly, his self-image. He may be seen at an NBA game one night and an art gallery opening the next. Bereolaesque is that much needed fusion between being a gentleman and being sexy. This savoir-faire man's guide walks every man through the stages of ordinary to excellence in just two hundred pages. Perfect for that coffee table discussion, Bereolaesque lends quality information to everyday people and celebrities alike. Beyond the book's mysteriously eye capturing cover are innovative and appealing ways to maneuver through life's crazes, while keeping cool and maintaining manners. In the midst of a world plagued with economic turmoil, tasteless politics and dark behavior, the gentleman is refreshing and necessary. Bereolaesque is for every man and every woman who believe that chivalry is NOT dead, and individuals who are willing to learn exactly how far something as simple as being a gentleman and proper etiquette can get you in life. Not to mention, ladies are always quite pleased to meet a real gentleman...",
+      "description": "WARNING: ETIQUETTE IS BACK ... ",
       "price": 45,
       "publishedDate": "2022-08-05",
       "categories": "Management",
-      "thumbnail": "https://www.dmarge.com/wp-content/uploads/2019/09/Bereolaesque-The-Contemporary-Gentleman-Etiquette-Book-For-The-Urban-Sophisticate.jpg",
+      "thumbnail": "https://i.harperapps.com/covers/9780062915665/x300.jpg",
       "id": "VIgq7wP"
     },
     {
-      "title": "Men and Style: Essays, Interviews and Considerations Hardcover – October 11, 2016",
+      "title": "Men and Style: Essays",
       "authors": "James N",
       "description": "Men and Style: Essays, Interviews and Considerations Hardcover – October 11, 2016",
       "price": 35,
@@ -47,13 +47,13 @@
       "price": 200,
       "publishedDate": "2022-08-02",
       "categories": "Science",
-      "thumbnail": "-",
+      "thumbnail": "https://kaylmoody.com/wp-content/uploads/2021/09/The-Elements-of-the-Crown-NEW-web-cover-600x900.jpg",
       "id": "rEopjY-"
     },
     {
       "title": "The Little Prince",
       "authors": "Antoine de Saint-Exupéry",
-      "description": "A pilot crashes in the Sahara Desert and encounters a strange young boy who calls himself the Little Prince. The Little Prince has traveled there from his home on a lonely, distant asteroid with a single rose. The story that follows is a beautiful and at times heartbreaking meditation on human nature.",
+      "description": "A pilot crashes in the Sahara Desert and encounters a strange young boy who calls himself the Little Prince.",
       "price": 14,
       "publishedDate": "1993-04-16",
       "categories": "Literature",

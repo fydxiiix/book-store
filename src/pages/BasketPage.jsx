@@ -38,23 +38,23 @@ function BasketPage() {
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell>Item Name:</TableCell>
-                  <TableCell>Picture:</TableCell>
-                  <TableCell>Price:</TableCell>
-                  <TableCell>Count:</TableCell>
-                  <TableCell>Amount:</TableCell>
+                  <TableCell className="cell">Item Name:</TableCell>
+                  {/* <TableCell className="cell">Picture:</TableCell> */}
+                  <TableCell className="cell">Price:</TableCell>
+                  <TableCell className="cell">Count:</TableCell>
+                  <TableCell className="cell">Amount:</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
                 {basketBooks.products.map((item) => (
                   <TableRow key={item.id}>
-                    <TableCell>{item.title}</TableCell>
-                    <TableCell>
+                    <TableCell className="cell">{item.title}</TableCell>
+                    {/* <TableCell className="cell">
                       <img width={60} src={item.thumbnail} alt="" />
-                    </TableCell>
-                    <TableCell>{item.price} $</TableCell>
-                    <TableCell>{item.count}</TableCell>
-                    <TableCell>{item.subPrice} $</TableCell>
+                    </TableCell> */}
+                    <TableCell className="cell">{item.price} $</TableCell>
+                    <TableCell className="cell">{item.count}</TableCell>
+                    <TableCell className="cell">{item.subPrice} $</TableCell>
                     <TableCell>
                       <Delete
                         className="basket-delete"
@@ -84,7 +84,7 @@ function BasketPage() {
                   >
                     {basketBooks.totalPrice}$
                   </TableCell>
-                  <TableCell className="total-tablecell" colSpan={5}>
+                  <TableCell className="total-tablecell" colSpan={3}>
                     {" "}
                     <Link to="/payment" className="total-link">
                       {" "}

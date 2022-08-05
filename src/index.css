@@ -192,6 +192,17 @@ a {
   }
 }
 
+@media all and (max-width: 570px) {
+ .sub-wrapper{
+padding: 2px;
+  width: auto;
+ }
+  .cell {
+width: 40px;
+padding: 2px;
+  }
+}
+
 @media all and (max-width: 490px) {
   .sign-wrap-1 .sign_word {
     font-size: 20px;
@@ -205,6 +216,10 @@ a {
   .title_price {
     font-size: 10px !important;
   }
+  .slider_custom {
+    width: 50px;
+  
+  }
 }
 
 @media all and (max-width: 430px) {
@@ -216,3 +231,5 @@ a {
     width: 20px !important;
   }
 }
+
+
