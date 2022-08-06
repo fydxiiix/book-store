@@ -87,7 +87,6 @@ function AdminAddPage() {
               <TextField
                 value={publishedDate}
                 onChange={(e) => setPublishedDate(e.target.value)}
-                // label="Date of publication"
                 variant="outlined"
                 type="date"
               />
@@ -100,9 +99,7 @@ function AdminAddPage() {
                 >
                   <MenuItem value="Law">Law</MenuItem>
                   <MenuItem value="Computers">Computers</MenuItem>
-                  <MenuItem value="Automatic indexing">
-                    Automatic indexing
-                  </MenuItem>
+                  <MenuItem value="Autobiography">Automatic indexing</MenuItem>
                   <MenuItem value="Technology and Engineering">
                     Technology and Engineering
                   </MenuItem>
@@ -123,7 +120,16 @@ function AdminAddPage() {
                 label="Thumbnail"
                 variant="outlined"
               />
-              <Button variant="outlined" type="submit">
+              <Button
+                variant="filled"
+                type="submit"
+                style={{
+                  backgroundColor: "purple",
+                  fontWeight: "600",
+                  fontSize: "20px",
+                  color: "white",
+                }}
+              >
                 Add
               </Button>
             </form>

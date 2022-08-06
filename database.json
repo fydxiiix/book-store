@@ -37,11 +37,10 @@
       "price": 35,
       "publishedDate": "2022-08-03",
       "categories": "Management",
-      "thumbnail": "https://www.dmarge.com/wp-content/uploads/2019/09/Men-and-Style-Essays-Interviews-and-Considerations.jpg",
+      "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/61-64r5t56L.jpg",
       "id": "BZM3RS8"
     },
     {
-
       "title": "The Little Prince",
       "authors": "Antoine de Saint-Exupéry",
       "description": "A pilot crashes in the Sahara Desert and encounters a strange young boy who calls himself the Little Prince.",
@@ -50,6 +49,26 @@
       "categories": "Literature",
       "thumbnail": "https://kbimages1-a.akamaihd.net/869050f5-1da7-4aa3-bc21-5c56388a5ea9/1200/1200/False/the-little-prince-52.jpg",
       "id": "eprpkhz"
+    },
+    {
+      "title": "Into the Magic Shop",
+      "authors": "James R. Doty MD",
+      "description": "A Neurosurgeon's Quest to Discover the Mysteries of the Brain and the Secrets of the Heart",
+      "price": 100,
+      "publishedDate": "2017-02-14",
+      "categories": "Autobiography",
+      "thumbnail": "https://s1.livelib.ru/boocover/1002810923/o/99ff/James_R._Doty__Into_the_Magic_Shop_A_Neurosurgeonamp039s_Quest_to_Discover_the_M.jpeg",
+      "id": "vzLgMTv"
+    },
+    {
+      "title": "Harry Potter (Books set 1-7)",
+      "authors": "J. K. Rowling",
+      "description": "Now for the first time ever, J.K. Rowling’s seven bestselling Harry Potter books are available in a stunning paperback boxed set! ",
+      "price": 275,
+      "publishedDate": "2009-07-01",
+      "categories": "Literature",
+      "thumbnail": "https://www.wizardingworld.com/_next/image?url=%2Fimages%2Fproducts%2Fbooks%2FUK%2Frectangle-1.jpg&w=1320&q=75",
+      "id": "zAgfEDP"
     }
   ]
 }

@@ -109,11 +109,21 @@ a {
   margin-top: 20px;
 }
 
+.admin-tablecell {
+  fontweight: 600;
+  fontsize: 20px;
+}
+
 .filter-block {
   width: 400px;
   margin-bottom: 40px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.css-1ygcj2i-MuiTableCell-root {
+  font-weight: 600;
+  font-family: "montserrat" sans-serif;
 }
 
 .total-link,

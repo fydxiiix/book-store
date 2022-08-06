@@ -43,7 +43,7 @@ function MainPage() {
               className="filter-block"
               // style={{ display: "flex", justifyContent: "end" }}
             >
-              <h4>Price filter</h4>
+              <h4 style={{ textAlign: "start" }}>Price filter</h4>
               <Slider
                 max={minMax[1]}
                 min={minMax[0]}
@@ -68,14 +68,12 @@ function MainPage() {
                   style={{
                     backgroundColor: "rgba(255, 255, 255, 0.623)",
                     width: "23%",
-                    // display: "flex",
                     marginLeft: "auto",
                     marginRight: "auto",
                   }}
                 >
                   <CardMedia
                     component="img"
-                    // height="250px"
                     width="200px"
                     image={item.thumbnail}
                   />

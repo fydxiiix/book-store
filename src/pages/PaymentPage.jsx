@@ -10,6 +10,11 @@ import {
 import { ClientContext } from "../context/Provider";
 
 function PaymentPage() {
+  const { basketBooks, getBooksFromBasket } = React.useContext(ClientContext);
+  React.useEffect(() => {
+    getBooksFromBasket();
+  }, []);
+
   return (
     <div className="payment-page">
       <Container>
@@ -27,7 +32,7 @@ function PaymentPage() {
             >
               <TableRow>
                 <TableCell>Payment amount:</TableCell>
-                <TableCell>$ </TableCell>
+                <TableCell>{basketBooks.totalPrice} $</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell>Name on card:</TableCell>
@@ -67,7 +72,7 @@ function PaymentPage() {
                   marginBottom: "5px",
                 }}
               >
-                Pay $
+                Pay {basketBooks.totalPrice} $
               </Button>
             </TableRow>
           </TableHead>
