@@ -52,7 +52,7 @@ function MainPage() {
                 onChange={(e, newValue) => setFilterByPrice(newValue)}
                 defaultValue={30}
                 sx={{
-                  width: 300,
+                  width: 200,
                   color: "purple",
                   "& .MuiSlider-thumb": {
                     borderRadius: "50px",
