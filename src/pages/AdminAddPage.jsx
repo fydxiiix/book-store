@@ -91,7 +91,7 @@ function AdminAddPage() {
                 variant="outlined"
                 type="date"
               />
-              <FormControl variant="outlined">
+              <FormControl style={{ marginTop: "20px" }} variant="outlined">
                 <InputLabel>Categories</InputLabel>
                 <Select
                   value={categories}

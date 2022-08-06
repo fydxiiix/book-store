@@ -32,7 +32,6 @@ function MainPage() {
   }, [filterByPrice, currentPage]);
 
   return (
-
     <div className="main-wrapper">
       <div className="main-page">
         <Container>
@@ -63,10 +62,21 @@ function MainPage() {
             </div>
             <div className="products">
               {books.map((item) => (
-                <Card key={item.id} className="product-card">
+                <Card
+                  key={item.id}
+                  className="product-card"
+                  style={{
+                    backgroundColor: "rgba(255, 255, 255, 0.623)",
+                    width: "23%",
+                    // display: "flex",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  }}
+                >
                   <CardMedia
                     component="img"
-                    height="240"
+                    // height="250px"
+                    width="200px"
                     image={item.thumbnail}
                   />
                   <CardContent>
@@ -96,7 +106,6 @@ function MainPage() {
                       ADD TO CART
                     </Button>
                     <Button
-                      // style={{ position: "absolute", bottom: 0 }}
                       variant="outlined"
                       size="small"
                       className="card-button"
@@ -139,7 +148,6 @@ function MainPage() {
           <p className="footer-p">© 2022 All Rights Reserved </p>
         </Container>
       </div>
-
     </div>
   );
 }

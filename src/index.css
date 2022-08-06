@@ -14,8 +14,9 @@ body {
   background-color: rgba(35, 4, 63, 0.281);
 }
 .sub-wrapper {
-  background-color: rgba(255, 255, 255, 0.596);
+  background-color: rgba(255, 255, 255, 0.623);
   padding: 10px;
+  border-radius: 20px;
 }
 .sub-wrapper .MuiTextField-root {
   margin-top: 20px;
@@ -92,7 +93,8 @@ a {
 .admin-edit-page,
 .admin-page,
 .basket-page,
-.payment-page {
+.payment-page,
+.favorite-page {
   padding-top: 40px;
 }
 
@@ -171,19 +173,9 @@ a {
 
 .footer-p {
   color: #fff;
-  /* font-weight: 700; */
   text-align: center;
   margin-top: 40px;
   font-size: 20px;
-}
-
-@keyframes animate {
-  from {
-    filter: hue-rotate(0deg);
-  }
-  to {
-    filter: hue-rotate(360deg);
-  }
 }
 
 @keyframes neon-1 {
@@ -246,13 +238,13 @@ a {
 }
 
 @media all and (max-width: 570px) {
- .sub-wrapper{
-padding: 2px;
-  width: auto;
- }
+  .sub-wrapper {
+    padding: 2px;
+    width: auto;
+  }
   .cell {
-width: 40px;
-padding: 2px;
+    width: 40px;
+    padding: 2px;
   }
 }
 
@@ -271,7 +263,6 @@ padding: 2px;
   }
   .slider_custom {
     width: 50px;
-  
   }
 }
 
@@ -284,5 +275,3 @@ padding: 2px;
     width: 20px !important;
   }
 }
-
-

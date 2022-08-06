@@ -33,7 +33,7 @@ function BasketPage() {
     <div className="main-wrapper">
       <div className="basket-page">
         <Container>
-          <h2>SHOPPING CART</h2>
+          <h2>Shopping cart</h2>
           <div className="sub-wrapper">
             <Table>
               <TableHead>
@@ -57,6 +57,7 @@ function BasketPage() {
                     <TableCell className="cell">{item.subPrice} $</TableCell>
                     <TableCell>
                       <Delete
+                        style={{ cursor: "pointer" }}
                         className="basket-delete"
                         onClick={() => deleteBook(item.id)}
                       ></Delete>
@@ -68,8 +69,12 @@ function BasketPage() {
                 <TableRow className="">
                   <TableCell
                     className="total-tablecell"
-                    colSpan={4}
-                    style={{ fontSize: "16px", fontWeight: "600" }}
+                    colSpan={3}
+                    style={{
+                      fontSize: "16px",
+                      fontWeight: "600",
+                      color: "black",
+                    }}
                   >
                     Total Amount:
                   </TableCell>
@@ -77,9 +82,9 @@ function BasketPage() {
                     className="total-tablecell"
                     colSpan={1}
                     style={{
-                      fontWeight: "500",
+                      fontWeight: "700",
                       fontSize: "16px",
-                      color: "gray",
+                      color: "black",
                     }}
                   >
                     {basketBooks.totalPrice}$
