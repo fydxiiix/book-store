@@ -225,7 +225,11 @@ a {
     align-items: center;
   }
   .product-card {
-    width: 70%;
+    width: 80% !important;
+    height: auto;
+  }
+  .product-card img {
+    object-fit: contain;
   }
 }
 
